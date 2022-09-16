@@ -1,5 +1,5 @@
 try:import random;from colorama import Fore;from requests import post
-except ModuleNotFoundError:exit('[!] Download The Missing Module !')
+except Exception as e:print(f'[!] Download The Missing Module ! , {e}');exit()
 def saver(user):
     ID=''#telegram id
     token=''#telegram bot token
